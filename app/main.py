@@ -10,7 +10,7 @@ app = FastAPI(
 )
 
 origins = [
-    "https://email-classifier-frontend.vercel.app",
+    "https://email-classifier-frontend-flax.vercel.app/",
 ]
 
 app.add_middleware(
