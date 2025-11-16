@@ -2,15 +2,14 @@ from fastapi import FastAPI
 from app.api.email_routes import router as email_router
 from fastapi.middleware.cors import CORSMiddleware
 
-app = FastAPI()
-
 app = FastAPI(
     title="Email Classifier API",
     version="1.0.0",
 )
 
 origins = [
-    "https://email-classifier-frontend-flax.vercel.app/",
+    "https://email-classifier-frontend-flax.vercel.app",
+    "http://localhost:5173",
 ]
 
 app.add_middleware(
