@@ -22,4 +22,3 @@ def read_root():
     return {"message": "API de classificação de emails funcionando!"}
 
 app.include_router(email_router)
-dsadasdsa
