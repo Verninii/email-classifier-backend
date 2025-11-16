@@ -9,9 +9,13 @@ app = FastAPI(
     version="1.0.0",
 )
 
+origins = [
+    "https://email-classifier-frontend.vercel.app",
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],            
+    allow_origins=origins,            
     allow_credentials=True,
     allow_methods=["*"],            
     allow_headers=["*"],            
